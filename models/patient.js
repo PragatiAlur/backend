@@ -13,7 +13,7 @@ const PatientSchema = new mongoose.Schema({
     firstName: {type:String, required: true},
     lastName: {type:String, required: false},
     email: {type: String, required: true},
-    phone: {type: String,  default: 'NA'}, 
+    phone: {type: String,  required : true}, 
     password : {type:String, required: true}, 
     age: {type:Number, required: true}, 
     gender: {type:String, required: true}, 
