@@ -6,9 +6,10 @@ const slot = new Schema({
         type : String,
         required : true
     },
-        time : {
-            
-        }
+    time : {
+        type : String,
+        required : true 
+    }
 })
 const rating = new Schema({
     patient_id : {
@@ -92,10 +93,12 @@ const doctorSchema = new Schema({
         type : String,
         required : false
     }],
-    slots : [slot],
-    ratings : [{
+    slots : [
+        slot
+    ],
+    ratings : [
         rating
-    }]
+    ]
 
 
 })
