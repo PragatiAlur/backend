@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const patientAddressSchema = new mongoose.Schema(
     {
         street: {type:String, required: true}, 
